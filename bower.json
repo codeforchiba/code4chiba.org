@@ -1,0 +1,11 @@
+{
+  "name": "code-for-chiba",
+  "version": "0.0.0",
+  "authors": [
+    "URAMOTO Kazunori <uramoto@wasoo.net>"
+  ],
+  "private": true,
+  "dependencies": {
+    "normalize.css": "~3.0.2"
+  }
+}

@@ -1,0 +1,45 @@
+html {
+  body {
+    background-color: $unohana;
+
+    h1, h2, h3, h4, h5, h6, p {
+      color: $black;
+      font-size: 14pt;
+      font-family: 'Lato', Arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+      font-weight: 300;
+
+      margin: 0;
+      padding: 0;
+    }
+
+    ul, ol {
+      list-style-type: none;
+
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: $black;
+      text-decoration: none;
+
+      &:active, &:visited {
+        color: $black;
+      }
+
+      &:hover {
+        color: $chiba-blue;
+      }
+    }
+
+    @include respond-to(smartphone) {
+      a {
+        color: $chiba-blue;
+
+        &:active, &:visited {
+          color: $chiba-blue;
+        }
+      }
+    }
+  }
+}

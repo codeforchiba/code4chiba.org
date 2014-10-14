@@ -1,0 +1,19 @@
+:coffeescript
+  ((apiKey) ->
+    ind = document.createElement('script')
+    ind.src = '//cdn.indicative.com/js/Indicative.min.js'
+    ind.type = 'text/javascript'
+    ind.async = 'true'
+
+    window.ind_init = false
+    ind.onload = ind.onreadystatechange = ->
+      rs = @.readyState
+      return if (window.ind_init || (rs && rs != 'complete' && rs != 'loaded'))
+
+      window.ind_init = true
+      Indicative.initialize(apiKey)
+      Indicative.buildEvent('Open Page')
+
+    s = document.getElementsByTagName('script')[0]
+    s.parentNode.insertBefore(ind, s)
+  )("#{data.api.indicative.api_key}")

@@ -1,0 +1,30 @@
+.button {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+
+  margin: 0;
+  padding: 0;
+
+  width: 120px;
+  height: 31px;
+  line-height: 31px;
+
+  font-size: 12pt;
+  text-decoration: none;
+  text-align: center;
+
+  @include border-radius(3px);
+
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    @include filter(brightness(0.9));
+  }
+
+  &.green {
+    color: $white;
+    background-color: $green-bamboo;
+  }
+}
