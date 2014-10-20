@@ -1,0 +1,45 @@
+#catalog {
+  #catalog-cover {
+    .cover {
+      @extend %cover-image;
+
+      background-image: image-url("cover_catalog.jpg");
+
+      h1 {
+        top: 115px;
+        right: 256px;
+      }
+    }
+
+    .contents {
+      @extend %content-element;
+    }
+  }
+
+  #catalog-list {
+    @extend %content-element;
+
+    table {
+      width: 100%;
+      margin: 16px 0;
+
+      th, td {
+        &.license {
+          width: 102px;
+        }
+
+        &.five-stars {
+          width: 116px;
+        }
+      }
+
+      td {
+        &.five-stars {
+          i {
+            color: $gold;
+          }
+        }
+      }
+    }
+  }
+}

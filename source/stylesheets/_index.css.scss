@@ -1,89 +1,13 @@
-%content-element {
-  h1 {
-    font-size: 40px;
-
-    i {
-      margin-right: 8px;
-    }
-  }
-
-  h2 {
-    font-size: 22px;
-
-    margin: 20px 10px 0 10px;
-  }
-
-  p {
-    line-height: 1.5;
-  }
-
-  @include respond-to(wide-screen) {
-    max-width: $vp-pc-min-width;
-    margin: 0 auto;
-    padding: 30px;
-
-    p {
-      margin: 20px 20px 0 20px;
-    }
-  }
-
-  @include respond-to(smartphone) {
-    padding: 30px 20px;
-
-    h1 {
-      font-size: 22pt;
-    }
-
-    h2 {
-      font-size: 16pt;
-
-      margin: 20px 0 0;
-    }
-
-    p {
-      margin: 20px 0 0;
-
-      font-size: 12pt;
-    }
-  }
-}
-
 #index {
-  #index-message {
+  #index-cover {
     .cover {
-      position: relative;
+      @extend %cover-image;
 
-      background-image: image-url("cover_photo.jpg");
-      background-size: cover;
-      background-position: center;
-
-      @include filter(grayscale(70%));
+      background-image: image-url("cover_top.jpg");
 
       h1 {
-        position: absolute;
-
         bottom: 16px;
         right: 24px;
-
-        font-size: 40px;
-      }
-
-      @include respond-to(wide-screen) {
-        height: 400px;
-        min-width: $vp-pc-min-width;
-      }
-
-      @include respond-to(smartphone) {
-        height: 400px;
-        background-position: 50% 100%;
-
-        h1 {
-          right: 2px;
-          width: 250px;
-
-          font-size: 20pt;
-          text-align: right;
-        }
       }
     }
 

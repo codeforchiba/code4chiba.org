@@ -6,7 +6,7 @@ html {
       color: $black;
       font-size: 14pt;
       font-family: 'Lato', Arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
-      font-weight: 300;
+      font-weight: $fw-normal;
 
       margin: 0;
       padding: 0;
@@ -17,6 +17,37 @@ html {
 
       margin: 0;
       padding: 0;
+    }
+
+    table {
+      border: 1px solid $chiba-blue;
+      line-height: 40px;
+
+      thead tr {
+        th {
+          background-color: $chiba-blue;
+          color: $white;
+
+          font-weight: $fw-normal;
+
+          text-align: left;
+          padding: 0 12px;
+        }
+      }
+
+      tbody tr {
+        td {
+          padding: 0 6px;
+        }
+
+        & + tr {
+          border-top: 1px solid $silver;
+
+          &.no-border {
+            border-top: none;
+          }
+        }
+      }
     }
 
     a {

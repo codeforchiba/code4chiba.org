@@ -1,0 +1,53 @@
+%content-element {
+  h1 {
+    font-size: 40px;
+
+    i {
+      margin-right: 8px;
+    }
+  }
+
+  h2 {
+    font-size: 22px;
+
+    margin: 20px 10px 0 10px;
+  }
+
+  p {
+    line-height: 1.5;
+
+    &.links {
+      text-align: right;
+    }
+  }
+
+  @include respond-to(wide-screen) {
+    max-width: $vp-pc-min-width;
+    margin: 0 auto;
+    padding: 30px;
+
+    p {
+      margin: 20px 20px 0 20px;
+    }
+  }
+
+  @include respond-to(smartphone) {
+    padding: 30px 20px;
+
+    h1 {
+      font-size: 22pt;
+    }
+
+    h2 {
+      font-size: 16pt;
+
+      margin: 20px 0 0;
+    }
+
+    p {
+      margin: 20px 0 0;
+
+      font-size: 12pt;
+    }
+  }
+}

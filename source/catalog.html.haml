@@ -1,0 +1,514 @@
+#catalog
+  %section#catalog-cover
+    .cover
+      %h1
+        Data Catalog
+
+    .contents
+      %p
+        千葉市が公開しているデータの一覧です。行政が公開しているものだけではなく、民間で作成しているものも順次とりあげていきます。
+
+  %section#catalog-list
+    %h1
+      千葉市の公開データ
+
+    %table
+      %thead
+        %tr
+          %th.name{colspan: 2} Name
+          %th.format Data Format
+          %th.license License
+          %th.five-starts 5 Star
+      %tbody
+        %tr
+          %td.name{rowspan: 2, colspan: 2}
+            AED 設置場所一覧
+            = link_to "http://www.city.chiba.jp/hokenfukushi/kenkou/kikaku/aed.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format MS Excel
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.format PDF
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr
+          %td.name{rowspan: 2, colspan: 2}
+            避難場所、避難所、広域避難場所一覧
+            = link_to "http://www.city.chiba.jp/somu/kikikanri/hinanbasyoichiran.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format CSV
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.format HTML
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr
+          %td.name{rowspan: 2, colspan: 2}
+            津波避難ビル
+            = link_to "http://www.city.chiba.jp/somu/kikikanri/Tunami-Hinan.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format CSV
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.format HTML
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr
+          %td.name{rowspan: 2, colspan: 2}
+            非常用井戸等
+            = link_to "http://www.city.chiba.jp/somu/bosai/hijouyouidotou.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format CSV
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.format PDF
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr
+          %td.name{colspan: 2}
+            公共施設位置情報
+            = link_to "http://www.city.chiba.jp/shimin/shimin/koho/map_opendata.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format CSV
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr
+          %td.name{colspan: 2}
+            ボーリングデータ
+            = link_to "http://www.city.chiba.jp/toshi/kenchiku/kanri/bolingdata.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format PDF
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr
+          %td.name{rowspan: 2, colspan: 2}
+            ごみ分別辞典
+            = link_to "http://www.city.chiba.jp/kankyo/junkan/shushugyomu/gomibunbetujiten.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format MS Excel
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.format PDF
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr
+          %td.name{rowspan: 5}
+            ごみ分別区分と出し方
+          %td.sub-name
+            可燃ごみ
+            = link_to "http://www.city.chiba.jp/kankyo/junkan/shushugyomu/kanengomi.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format HTML
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.sub-name
+            不燃ごみ・有害ごみ
+            = link_to "http://www.city.chiba.jp/kankyo/junkan/shushugyomu/hunengomi.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format HTML
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.sub-name
+            びん・缶・ペットボトル
+            = link_to "http://www.city.chiba.jp/kankyo/junkan/shushugyomu/shigenbutsu.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format HTML
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.sub-name
+            古紙・布類
+            = link_to "http://www.city.chiba.jp/kankyo/junkan/shushugyomu/koshi-nunorui.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format HTML
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.sub-name
+            粗大ごみ
+            = link_to "http://www.city.chiba.jp/kankyo/junkan/shushugyomu/sodaigomi.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format HTML
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr
+          %td.name{colspan: 2}
+            家庭ごみ・資源物の収集日
+            = link_to "http://www.city.chiba.jp/kankyo/junkan/shushugyomu/shushubi.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format HTML
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr
+          %td.name{rowspan: 2, colspan: 2}
+            小学校区別人口集計表
+            = link_to "http://www.city.chiba.jp/shimin/shimin/service/shougakkoukubetujinkou.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format MS Excel
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.format PDF
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr
+          %td.name{colspan: 2}
+            将来人口推計
+            = link_to "http://www.city.chiba.jp/sogoseisaku/sogoseisaku/kikaku/population2.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format MS Excel
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr
+          %td.name{rowspan: 8}
+            保健統計
+          %td.sub-name{rowspan: 2}
+            平成21年
+            = link_to "http://www.city.chiba.jp/hokenfukushi/somu/hokentokei2009.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format MS Excel
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.format PDF
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.sub-name{rowspan: 2}
+            平成22年
+            = link_to "http://www.city.chiba.jp/hokenfukushi/somu/hokentokei2010.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format MS Excel
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.format PDF
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.sub-name{rowspan: 2}
+            平成23年
+            = link_to "http://www.city.chiba.jp/hokenfukushi/somu/hokentokei2011.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format MS Excel
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.format PDF
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.sub-name{rowspan: 2}
+            平成24年
+            = link_to "http://www.city.chiba.jp/hokenfukushi/somu/hokentokei2012.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format MS Excel
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.format PDF
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr
+          %td.name
+            統計書
+          %td.sub-name
+            平成25年
+            = link_to "http://www.city.chiba.jp/sogoseisaku/sogoseisaku/tokei/25toukeisyo.html", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format MS Excel
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr
+          %td.name{colspan: 2}
+            推計人口、住民基本台帳人口
+          %td.format MS Excel
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr
+          %td.name{rowspan: 11}
+            決算書
+          %td.sub-name{rowspan: 2}
+            平成20年度
+            = link_to "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/kessan.html#h20", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format MS Excel
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.format PDF
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.sub-name{rowspan: 2}
+            平成21年度
+            = link_to "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/kessan.html#h21", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format MS Excel
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.format PDF
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.sub-name{rowspan: 2}
+            平成22年度
+            = link_to "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/kessan.html#h22", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format MS Excel
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.format PDF
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.sub-name{rowspan: 2}
+            平成23年度
+            = link_to "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/kessan.html#h23", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format MS Excel
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.format PDF
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.sub-name{rowspan: 2}
+            平成24年度
+            = link_to "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/kessan.html#h24", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format MS Excel
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.format PDF
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+        %tr.no-border
+          %td.sub-name
+            平成25年度
+            = link_to "https://www.city.chiba.jp/zaiseikyoku/zaisei/zaisei/kessan.html#h25", target: "_blank" do
+              %i.fa.fa-external-link
+          %td.format PDF
+          %td.license CC BY 2.1
+          %td.five-stars
+            %i.fa.fa-star
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
+            %i.fa.fa-star-o
