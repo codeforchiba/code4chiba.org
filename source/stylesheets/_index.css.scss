@@ -5,9 +5,35 @@
 
       background-image: image-url("cover_top.jpg");
 
-      h1 {
-        bottom: 16px;
-        right: 24px;
+      @include respond-to(wide-screen) {
+        h1 {
+          bottom: 16px;
+          right: 24px;
+        }
+      }
+
+      @include respond-to(tablet) {
+        h1 {
+          width: 310px;
+          text-align: right;
+
+          font-size: 28pt;
+
+          bottom: 6px;
+          right: 12px;
+        }
+      }
+
+      @include respond-to(smartphone) {
+        h1 {
+          width: 240px;
+
+          font-size: 20pt;
+          text-align: right;
+
+          bottom: 6px;
+          right: 6px;
+        }
       }
     }
 
@@ -38,7 +64,7 @@
 
           h2 {
             color: $white;
-            font-size: 24px;
+            font-size: 18pt;
 
             line-height: 1.5;
 
@@ -72,7 +98,7 @@
 
           h2 {
             color: $white;
-            font-size: 26px;
+            font-size: 20pt;
 
             line-height: 1.5;
           }
@@ -110,6 +136,47 @@
         }
       }
 
+      @include respond-to(tablet) {
+        height: auto;
+
+        > .wrapper {
+          position: static;
+
+          .brief {
+            position: static;
+            float: none;
+
+            width: auto;
+            height: auto;
+
+            .buttons {
+              margin: 18px 0;
+            }
+          }
+
+          .news {
+            margin: 0 10px;
+            padding-bottom: 20px;
+
+            ul {
+              li {
+                p {
+                  font-size: 12pt;
+
+                  &.date {
+                    float: none;
+                  }
+
+                  &.description {
+                    margin-left: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
       @include respond-to(smartphone) {
         height: auto;
 
@@ -121,9 +188,10 @@
             float: none;
 
             width: auto;
+            height: auto;
 
             .buttons {
-              margin-top: 18px;
+              margin: 18px 0;
             }
           }
 
@@ -134,7 +202,7 @@
             ul {
               li {
                 p {
-                  font-size: 13pt;
+                  font-size: 12pt;
 
                   &.date {
                     float: none;

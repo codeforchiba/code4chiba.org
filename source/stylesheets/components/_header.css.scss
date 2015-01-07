@@ -36,8 +36,11 @@ header {
     h1 {
       float: left;
 
-      margin-left: 20px;
-      font-size: 48pt;
+      margin: 3px 0 0 20px;
+      text-indent: -9999px;
+
+      background-image: image-url("logo.png");
+      background-size: contain;
     }
 
     ul {
@@ -63,10 +66,25 @@ header {
 
     @include respond-to(wide-screen) {
       min-width: $vp-pc-min-width;
-      height: 96px;
+      height: 102px;
 
       h1 {
-        line-height: 96px;
+        width: 416px;
+        height: 97px;
+      }
+    }
+
+    @include respond-to(tablet) {
+      min-width: $vp-hsp-max-width;
+      height: 102px;
+
+      h1 {
+        width: 320px;
+        height: 75px;
+      }
+
+      ul {
+        bottom: 2px;
       }
     }
 
@@ -75,7 +93,10 @@ header {
 
       h1 {
         float: none;
-        font-size: 32pt;
+        margin: 0 auto;
+
+        width: 250px;
+        height: 58px;
       }
 
       ul {
@@ -86,7 +107,7 @@ header {
 
           text-align: right;
 
-          margin: 0 20px 0 0;
+          margin: 0 10px 0 0;
           line-height: 2.0;
         }
       }

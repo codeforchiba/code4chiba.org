@@ -6,13 +6,51 @@
       background-image: image-url("cover_catalog.jpg");
 
       h1 {
-        top: 115px;
-        right: 256px;
+        right: 0px;
+        text-align: right;
+
+        background-color: $white;
+        border-left: 7px solid $chiba-red;
       }
     }
 
     .contents {
       @extend %content-element;
+    }
+
+    @include respond-to(wide-screen) {
+      .cover {
+        h1 {
+          padding: 0 6px 0 0;
+          width: 326px;
+
+          bottom: 12px;
+        }
+      }
+    }
+
+    @include respond-to(tablet) {
+      .cover {
+        h1 {
+          padding: 0 6px 0 0;
+          width: 290px;
+
+          bottom: 12px;
+        }
+      }
+    }
+
+    @include respond-to(smartphone) {
+      .cover {
+        h1 {
+          padding: 0 6px 0 0;
+          width: 174px;
+
+          bottom: 8px;
+
+          font-size: 20pt;
+        }
+      }
     }
   }
 
@@ -37,6 +75,62 @@
         &.five-stars {
           i {
             color: $gold;
+          }
+        }
+      }
+    }
+
+    @include respond-to(low-smartphone) {
+      padding: 30px 4px;
+
+      h1 {
+        text-align: center;
+      }
+
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      table {
+        font-size: 10pt;
+
+        tr {
+          @include clearfix;
+        }
+
+        th {
+          padding: 0 0 0 6px;
+        }
+
+        th, td {
+          &.format, &.license, &.five-stars {
+            float: left;
+            width: 29%;
+          }
+        }
+      }
+    }
+
+    @include respond-to(high-smartphone) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      table {
+        font-size: 10pt;
+
+        tr {
+          @include clearfix;
+        }
+
+        th {
+          padding: 0 0 0 12px;
+        }
+
+        th, td {
+          &.format, &.license, &.five-stars {
+            float: left;
+            width: 29%;
           }
         }
       }

@@ -1,76 +1,77 @@
 html {
   body {
     background-color: $unohana;
+  }
+}
 
-    h1, h2, h3, h4, h5, h6, p {
-      color: $black;
-      font-size: 14pt;
-      font-family: 'Lato', Arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+h1, h2, h3, h4, h5, h6, p {
+  color: $black;
+  font-size: 14pt;
+  font-family: 'Lato', Arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-weight: $fw-normal;
+
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border: 1px solid $chiba-blue;
+  line-height: 40px;
+
+  thead tr {
+    background-color: $chiba-blue;
+
+    th {
+      color: $white;
+
       font-weight: $fw-normal;
 
-      margin: 0;
-      padding: 0;
+      text-align: left;
+      padding: 0 12px;
+    }
+  }
+
+  tbody tr {
+    td {
+      padding: 0 6px;
     }
 
-    ul, ol {
-      list-style-type: none;
+    & + tr {
+      border-top: 1px solid $silver;
 
-      margin: 0;
-      padding: 0;
-    }
-
-    table {
-      border: 1px solid $chiba-blue;
-      line-height: 40px;
-
-      thead tr {
-        th {
-          background-color: $chiba-blue;
-          color: $white;
-
-          font-weight: $fw-normal;
-
-          text-align: left;
-          padding: 0 12px;
-        }
-      }
-
-      tbody tr {
-        td {
-          padding: 0 6px;
-        }
-
-        & + tr {
-          border-top: 1px solid $silver;
-
-          &.no-border {
-            border-top: none;
-          }
-        }
+      &.no-border {
+        border-top: none;
       }
     }
+  }
+}
 
-    a {
-      color: $black;
-      text-decoration: none;
+a {
+  color: $black;
+  text-decoration: none;
 
-      &:active, &:visited {
-        color: $black;
-      }
+  &:active, &:visited {
+    color: $black;
+  }
 
-      &:hover {
-        color: $chiba-blue;
-      }
-    }
+  &:hover {
+    color: $chiba-blue;
+  }
+}
 
-    @include respond-to(smartphone) {
-      a {
-        color: $chiba-blue;
+@include respond-to(smartphone) {
+  a {
+    color: $chiba-blue;
 
-        &:active, &:visited {
-          color: $chiba-blue;
-        }
-      }
+    &:active, &:visited {
+      color: $chiba-blue;
     }
   }
 }

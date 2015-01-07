@@ -2,5 +2,42 @@ footer {
   border-top: 8px solid $chiba-blue;
   background-color: $silver;
 
-  padding: 32px 16px 12px;
+  height: 32px;
+
+  background-image: image-url("icon.png");
+  background-repeat: no-repeat;
+
+  @include respond-to(wide-screen) {
+    padding: 20px 68px 12px 16px;
+
+    background-position: top 50% right 10px;
+    background-size: 50px 50px;
+
+    p {
+      text-align: right;
+    }
+  }
+
+  @include respond-to(tablet) {
+    padding: 20px 68px 12px 0;
+
+    background-position: top 50% right 5px;
+    background-size: 50px 50px;
+
+    p {
+      text-align: right;
+    }
+  }
+
+  @include respond-to(smartphone) {
+    padding: 20px 0 12px;
+
+    background-position: top 50% right 5px;
+    background-size: 50px 50px;
+
+    p {
+      font-size: 12pt;
+      text-align: center;
+    }
+  }
 }

@@ -4,6 +4,7 @@ $usuzumi:      rgb( 163, 163, 162);
 $silver:       rgb( 192, 192, 192);
 $gold:         rgb( 230, 180,  34);
 
+$chiba-red:    rgb( 211,  41,  94);
 $chiba-blue:   rgb(   1, 107, 191);
 $light-blue:   rgb(   1, 129, 229);
 
@@ -16,7 +17,7 @@ $white:        rgb( 255, 255, 253);
 // Font weight
 $fw-normal:  300;
 
-
 // Viewport size
-$vp-sp-max-width:  420px;
-$vp-pc-min-width:  960px;
+$vp-lsp-max-width:  360px; // low spec smartphone
+$vp-hsp-max-width:  420px; // high spec smartphone
+$vp-pc-min-width:   960px;

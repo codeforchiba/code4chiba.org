@@ -31,6 +31,18 @@
     }
   }
 
+  @include respond-to(tablet) {
+    padding: 30px 20px;
+
+    h2 {
+      margin: 20px 0 0;
+    }
+
+    p {
+      margin: 20px 0 0;
+    }
+  }
+
   @include respond-to(smartphone) {
     padding: 30px 20px;
 

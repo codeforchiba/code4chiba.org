@@ -1,9 +1,15 @@
 @mixin respond-to($media) {
-  @if $media == smartphone {
-    @media only screen and (max-width: $vp-sp-max-width) { @content; }
+	@if $media == low-smartphone {
+		@media only screen and (max-width: $vp-lsp-max-width) { @content; }
+	}
+  @else if $media == high-smartphone {
+    @media only screen and (min-width: $vp-lsp-max-width + 1) and (max-width: $vp-hsp-max-width) { @content; }
+  }
+  @else if $media == smartphone {
+    @media only screen and (max-width: $vp-hsp-max-width) { @content; }
   }
   @else if $media == tablet {
-    @media only screen and (min-width: $vp-sp-max-width + 1) and (max-width: $vp-pc-min-width - 1) { @content; }
+    @media only screen and (min-width: $vp-hsp-max-width + 1) and (max-width: $vp-pc-min-width - 1) { @content; }
   }
   @else if $media == wide-screen {
     @media only screen and (min-width: $vp-pc-min-width) { @content; }
