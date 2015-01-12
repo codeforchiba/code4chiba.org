@@ -1,43 +1,61 @@
 footer {
+  @include clearfix;
+
   border-top: 8px solid $chiba-blue;
   background-color: $silver;
 
-  height: 32px;
+  padding: 20px 0px 12px 98px;
 
   background-image: image-url("icon.png");
   background-repeat: no-repeat;
+  background-size: 80px 80px;
+  background-position: top 10px left 10px;
+
+  p {
+    height: 50px;
+    line-height: 48px;
+
+    padding-right: 68px;
+  }
+
+  ul {
+    float: right;
+
+    @include clearfix;
+    margin: 12px 20px 0 0;
+
+    li {
+      float: left;
+
+      i.fa {
+        font-size: 24pt;
+      }
+
+      & + li {
+        margin-left: 10px;
+      }
+    }
+  }
 
   @include respond-to(wide-screen) {
-    padding: 20px 68px 12px 16px;
-
-    background-position: top 50% right 10px;
-    background-size: 50px 50px;
-
     p {
-      text-align: right;
     }
   }
 
   @include respond-to(tablet) {
-    padding: 20px 68px 12px 0;
-
-    background-position: top 50% right 5px;
-    background-size: 50px 50px;
-
     p {
-      text-align: right;
+      background-position: top 50% right 5px;
     }
   }
 
   @include respond-to(smartphone) {
-    padding: 20px 0 12px;
-
-    background-position: top 50% right 5px;
-    background-size: 50px 50px;
-
     p {
       font-size: 12pt;
       text-align: center;
+
+      padding-right: 0;
+
+      background-position: top 50% right 5px;
     }
   }
 }

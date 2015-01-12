@@ -9,7 +9,10 @@
       %meta{:"http-equiv" => "X-UA-Compatible", :content => "IE=edge, chrome=1"}
 
     %title
-      = current_page.data.title || data.site_info.title
+      - if current_page.data.title
+        #{current_page.data.title} - #{data.site_info.title}
+      - else
+        = data.site_info.title
 
     %meta{name: "description", content: current_page.data.description || data.site_info.description}
     = partial 'components/ogp'
