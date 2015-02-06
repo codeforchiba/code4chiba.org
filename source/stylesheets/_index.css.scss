@@ -122,6 +122,14 @@
                 &.description {
                   margin-left: 140px;
                   color: $white;
+
+                  a {
+                    color: $white;
+
+                    &:active, &:visited {
+                      color: $white;
+                    }
+                  }
                 }
               }
             }

@@ -12,11 +12,17 @@ header {
       li {
         float: left;
 
-        color: $white;
-
         height: 32px;
         line-height: 32px;
         padding: 0;
+
+        a {
+          color: $white;
+
+          &:active, &:visited {
+            color: $white;
+          }
+        }
       }
     }
 
