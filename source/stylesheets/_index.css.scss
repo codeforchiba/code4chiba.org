@@ -5,6 +5,13 @@
 
       background-image: image-url("cover_top.jpg");
 
+      a {
+        position: absolute;
+
+        top: 0;
+        right: 0;
+      }
+
       @include respond-to(wide-screen) {
         h1 {
           bottom: 16px;
@@ -25,6 +32,10 @@
       }
 
       @include respond-to(smartphone) {
+        a {
+          display: none;
+        }
+
         h1 {
           width: 240px;
 

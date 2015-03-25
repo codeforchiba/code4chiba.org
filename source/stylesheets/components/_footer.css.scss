@@ -27,8 +27,33 @@ footer {
     li {
       float: left;
 
-      i.fa {
-        font-size: 24pt;
+      a {
+        > i.fa {
+          font-size: 24pt;
+        }
+
+        span.fa-stack {
+          i {
+            &.fa-inverse {
+              color: $silver;
+            }
+
+            &.fa-stack-2x {
+              font-size: 24pt;
+            }
+          }
+
+          &.medium {
+            width: 1.8em;
+            height: 1.8em;
+            line-height: 1.8em;
+
+            i.fa-stack-1x {
+              font-size: 14pt;
+              line-height: 1.8em;
+            }
+          }
+        }
       }
 
       & + li {
