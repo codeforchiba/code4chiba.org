@@ -9,10 +9,10 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300);
 
 // External library
-@import "font-awesome";
-
 @import "compass/utilities/general";
 @import "compass/css3";
+
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 
 // Common
 @import "base";
