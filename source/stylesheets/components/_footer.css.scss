@@ -15,10 +15,13 @@ footer {
     height: 50px;
     line-height: 48px;
 
-    padding-right: 68px;
+    padding: 0 68px 0 0;
   }
 
-  ul {
+  #footer-menu {
+  }
+
+  #footer-service {
     float: right;
 
     @include clearfix;
@@ -63,8 +66,6 @@ footer {
   }
 
   @include respond-to(wide-screen) {
-    p {
-    }
   }
 
   @include respond-to(tablet) {
@@ -74,6 +75,10 @@ footer {
   }
 
   @include respond-to(smartphone) {
+    #footer-menu {
+      text-align: center;
+    }
+
     p {
       font-size: 12pt;
       text-align: center;
