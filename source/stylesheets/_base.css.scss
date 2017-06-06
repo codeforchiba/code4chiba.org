@@ -1,13 +1,13 @@
 html {
   body {
     background-color: $unohana;
+    font-family: -apple-system, 'BlinkMacSystemFont', 'Lato', Arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
   }
 }
 
 h1, h2, h3, h4, h5, h6, p {
   color: $black;
   font-size: 14pt;
-  font-family: 'Lato', Arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
   font-weight: $fw-normal;
 
   margin: 0;

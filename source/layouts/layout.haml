@@ -17,12 +17,12 @@
     %meta{name: "description", content: current_page.data.description || data.site_info.description}
     = partial 'components/ogp'
 
-    = stylesheet_link_tag "all"
-    = javascript_include_tag  "all"
+    = javascript_include_tag  "bundle"
+    = stylesheet_link_tag "style"
 
   %body{class: page_classes}
     = partial 'components/header'
     = yield
     = partial 'components/footer'
     = partial 'components/typeform'
-    = google_analytics_universal_tag
+    = google_analytics_tag

@@ -8,15 +8,15 @@
 // Web fonts
 @import url(//fonts.googleapis.com/css?family=Lato:300);
 
-// External library
-@import "compass/utilities/general";
-@import "compass/css3";
-
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 // Common
 @import "base";
-@import "components/*";
+@import "components/button";
+@import "components/content";
+@import "components/cover";
+@import "components/footer";
+@import "components/header";
 
 // Pages
 @import "index";

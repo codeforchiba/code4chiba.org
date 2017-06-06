@@ -73,6 +73,67 @@
                   次期プロジェクト「Parks by the people」をスタートします！
                   %i.fa.fa-external-link
 
+  %section#index-promo
+    %ul
+      %li
+        %p.title
+          千葉市お祭りデータセンター
+        %p.description
+          地域を知る。お祭りから。
+        %p.cover
+          = link_to "http://festival.code4chiba.org/", target: "_blank" do
+            = image_tag "festival-cover.jpg", width: 300
+      %li
+        %p.title
+          ちば保育園マップ
+        %p.description
+          マップから簡単に。
+        %p.cover
+          = link_to "http://papamama.code4chiba.org/", target: "_blank" do
+            = image_tag "papamama-cover.jpg", width: 300
+
+  %section#index-join
+    %h1
+      %i.fa.fa-group
+      参加しよう！
+
+    %h2
+      Code for Chiba を知る
+
+    %p
+      Code for Chiba の活動に興味を持ったら参加してみましょう！
+
+    %p
+      すぐ始められるのが、Facebook 上での参加。Code for Chiba に興味を持った方達が集まる Facebook Group があります。まずは、こちらに参加してみましょう！
+
+    %p.links
+      = link_to "https://www.facebook.com/groups/654182694700156/", target: "_blank" do
+        %i.fa.fa-external-link
+        Code for Chiba Supporters | Facebook Group
+
+    %p
+      活動の様子を見てみたい！ 話をしてみたい！ 方は、毎月開催しているイベントにご参加ください。どなたでも参加することができます。Facebook Page もしくは、Peatix にて開催予定を見ることができます。
+
+    %p.links
+      = link_to "https://www.facebook.com/codeforchiba/", target: "_blank" do
+        %i.fa.fa-external-link
+        Code for Chiba | Facebook Page
+      %br/
+      = link_to "http://codeforchiba.peatix.com/", target: "_blank" do
+        %i.fa.fa-external-link
+        Code for Chiba | Peatix
+
+    %h2
+      Code for Chiba に参加する
+
+    %p
+      Code for Chiba は、NPO法人です。本法人では、正会員と賛助会員を募集しています。
+
+    %p.links
+      = link_to "member.html" do
+        %i.fa.fa-angle-double-right
+        会員制度のご案内
+
   %section#index-apps
     %h1
       %i.fa.fa-cube
@@ -94,6 +155,11 @@
           %i.fa.fa-external-link
           千葉市お祭りデータセンター
 
+      %li
+        = link_to "http://papamama.code4chiba.org/", target: "_blank" do
+          %i.fa.fa-external-link
+          ちば保育園マップ
+
   %section#index-data-catalog
     %h1
       %i.fa.fa-database
@@ -106,25 +172,3 @@
       = link_to "catalog.html" do
         %i.fa.fa-angle-double-right
         Data Catalog
-
-  %section#index-join
-    %h1
-      %i.fa.fa-group
-      Join a team
-
-    %p
-      Code for X と聞くと、ソフトウェアを作ることを思い浮かべるかもしれません。しかし、ソフトウェアを作るまでには様々なプロセスが必要です。そもそもの課題を発見すること、課題を解決する方法を見つけること、必要なデータを集めること、ユーザーにどのように見せるかをデザインすること、そのすべてが必要なアクションです。
-
-    %p
-      すべてのプロセスを経て、はじめてソフトウェアは完成します。できることから、参加してみませんか？
-
-    %h2
-      参加方法
-
-    %p
-      こちらの Facebook グループに、参加してください。あとは、行動するのみです！
-
-    %p
-      = link_to "https://www.facebook.com/groups/654182694700156/", target: "_blank" do
-        %i.fa.fa-external-link
-        Code for Chiba

@@ -4,13 +4,13 @@
   background-size: cover;
   background-position: center;
 
-  @include filter(grayscale(70%));
+  filter: grayscale(70%);
 
   h1 {
     position: absolute;
 
     font-size: 32pt;
-    @include text-shadow(0px 0px 2px $white);
+    text-shadow: 0px 0px 2px $white;
   }
 
   @include respond-to(wide-screen) {

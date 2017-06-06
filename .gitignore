@@ -13,9 +13,13 @@
 # Ignore cache
 /.sass-cache
 /.cache
+/.tmp
 
 # Ignore .DS_store file
 .DS_Store
 
 # Ignore bower component
 /vendor/bower
+
+# Ignore node modules
+/node_modules

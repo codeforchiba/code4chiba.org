@@ -3,7 +3,7 @@
     .cover {
       @extend %cover-image;
 
-      background-image: image-url("cover_catalog.jpg");
+      background-image: url("/images/cover_catalog.jpg");
 
       h1 {
         right: 0px;

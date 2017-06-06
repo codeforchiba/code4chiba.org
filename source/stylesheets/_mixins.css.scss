@@ -15,3 +15,14 @@
     @media only screen and (min-width: $vp-pc-min-width) { @content; }
   }
 }
+
+@mixin clearfix {
+	&::before, &::after {
+		content: " ";
+//	  display: table;
+	}
+
+	&::after {
+	  clear: both;
+	}
+}

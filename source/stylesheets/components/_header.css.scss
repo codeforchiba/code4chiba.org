@@ -1,40 +1,4 @@
 header {
-  nav {
-    @include clearfix;
-    padding-right: 20px;
-
-    background-color: $black;
-
-    ul {
-      float: right;
-      @include clearfix;
-
-      li {
-        float: left;
-
-        height: 32px;
-        line-height: 32px;
-        padding: 0;
-
-        a {
-          color: $white;
-
-          &:active, &:visited {
-            color: $white;
-          }
-        }
-      }
-    }
-
-    @include respond-to(wide-screen) {
-      min-width: $vp-pc-min-width;
-    }
-
-    @include respond-to(smartphone) {
-      display: none;
-    }
-  }
-
   #header-main {
     position: relative;
     @include clearfix;
@@ -45,7 +9,7 @@ header {
       margin: 3px 0 0 20px;
       text-indent: -9999px;
 
-      background-image: image-url("logo.png");
+      background-image: url("/images/logo.png");
       background-size: contain;
     }
 
@@ -73,10 +37,11 @@ header {
     @include respond-to(wide-screen) {
       min-width: $vp-pc-min-width;
       height: 102px;
+      padding-top: 26px;
 
       h1 {
-        width: 416px;
-        height: 97px;
+        width: 410px;
+        height: 96px;
       }
     }
 
@@ -101,7 +66,7 @@ header {
         float: none;
         margin: 0 auto;
 
-        width: 250px;
+        width: 246px;
         height: 58px;
       }
 
