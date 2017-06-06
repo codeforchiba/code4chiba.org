@@ -1,7 +1,7 @@
 header {
   #header-main {
     position: relative;
-    @include clearfix;
+    @include clearfix();
 
     h1 {
       float: left;
@@ -15,7 +15,7 @@ header {
 
     ul {
       position: absolute;
-      @include clearfix;
+      @include clearfix();
 
       right: 20px;
       bottom: 10px;
@@ -36,7 +36,7 @@ header {
 
     @include respond-to(wide-screen) {
       min-width: $vp-pc-min-width;
-      height: 102px;
+      height: 112px;
       padding-top: 26px;
 
       h1 {

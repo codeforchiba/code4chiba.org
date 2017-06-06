@@ -56,7 +56,7 @@
       > .wrapper {
         position: relative;
 
-        @include clearfix;
+        @include clearfix();
         overflow: visible;
 
         .brief {
@@ -118,7 +118,7 @@
             margin: 12px 0 0 16px;
 
             li {
-              @include clearfix();
+              @include clearfix(true);
 
               p {
                 font-size: 13pt;
@@ -233,6 +233,10 @@
                     margin-left: 0;
                   }
                 }
+
+                & + li {
+                  margin-top: 8px;
+                }
               }
             }
           }
@@ -293,6 +297,7 @@
 
         img {
           border-radius: 12px;
+          width: 300px;
         }
       }
     }
@@ -309,6 +314,22 @@
 
     @include respond-to(smartphone) {
       padding: 30px 20px;
+
+      ul {
+        flex-direction: column;
+        justify-content: start;
+
+        li {
+          img {
+            border-radius: 12px;
+            width: 260px;
+          }
+
+          & + li {
+            margin-top: 16px;
+          }
+        }
+      }
     }
   }
 }

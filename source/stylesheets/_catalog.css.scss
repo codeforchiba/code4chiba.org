@@ -95,7 +95,7 @@
         font-size: 10pt;
 
         tr {
-          @include clearfix;
+          @include clearfix();
         }
 
         th {
@@ -120,7 +120,7 @@
         font-size: 10pt;
 
         tr {
-          @include clearfix;
+          @include clearfix();
         }
 
         th {

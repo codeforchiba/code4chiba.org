@@ -16,10 +16,10 @@
   }
 }
 
-@mixin clearfix {
+@mixin clearfix($li: false) {
 	&::before, &::after {
 		content: " ";
-//	  display: table;
+	  display: if($li, inline, table);
 	}
 
 	&::after {

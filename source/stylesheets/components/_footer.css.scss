@@ -1,5 +1,5 @@
 footer {
-  @include clearfix;
+  @include clearfix();
 
   border-top: 8px solid $chiba-blue;
   background-color: $silver;
@@ -24,7 +24,7 @@ footer {
   #footer-service {
     float: right;
 
-    @include clearfix;
+    @include clearfix();
     margin: 12px 20px 0 0;
 
     li {
