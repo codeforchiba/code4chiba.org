@@ -1,0 +1,67 @@
+---
+title: "Membership"
+description: "NPO法人 Code for Chiba の会員制度のご案内です。"
+---
+
+#membership
+  %section#membership-cover
+    .cover
+      %h1
+        Membership
+
+    .contents
+      %p
+        会員制度のご案内です。
+
+  %section#membership-about
+    %h1 会員制度について
+
+    %p
+      Code for Chiba の活動に興味を持ち、ご賛同いただける皆様に会員制度をご案内します。会員には、正会員と賛助会員の 2種類あります。
+
+    %h2 正会員
+
+    %p
+      Code for Chiba の活動に賛同し、主体的に参加する皆様におすすめします。Code for Chiba の進める各種プロジェクトやイベントへの積極的な参加をお願いしております。正会員には、総会の議決権がありますので、総会への参加義務があります。
+
+    %h2 賛助会員
+
+    %p
+      Code for Chiba の活動に賛同し、支援いただける皆様におすすめします。賛助会員は、個人ではなく法人でも可能です。賛助会員の皆様の会費が、活動の支えとなります。賛助会員には、総会の議決権はございません。
+
+  %section#membership-join
+    %h1 入会希望の方へ
+
+    %h2 正会員
+
+    %p
+      下記の申込みフォームに必要事項を記入してください。内容確認の上、手続き方法についてご連絡いたします。
+
+    %p.links
+      = link_to "https://goo.gl/forms/w0SDOqctO5yhnVNw1", target: "_blank" do
+        %i.fa.fa-external-link
+        NPO法人 Code for Chiba 入会申込書
+
+    %h2 賛助会員
+
+    %p
+      下記のメールアドレスまで、お問い合わせください。オンラインの入会フォームは、準備でき次第ご案内いたします。
+
+    %p.links
+      = mail_to "hello@code4chiba.org", nil, subject: "賛助会員への入会申込みについて"
+
+    %h2 その他
+
+    %p
+      会員制度について、ご意見・ご質問等ございましたら、下記の問い合わせフォームよりお問い合わせください。
+
+    %p.links
+      = link_to "https://codeforchiba.typeform.com/to/qzQYxn", class: "typeform-share link", target: "_blank", data: {mode: "1"} do
+        %i.fa.fa-external-link
+        問い合わせフォーム
+
+    %p
+      もしくは、こちらのメールアドレスへお問い合わせください。
+
+    %p.links
+      = mail_to "hello@code4chiba.org"
