@@ -1,0 +1,119 @@
+#about {
+  #about-cover {
+    .cover {
+      @extend %cover-image;
+
+      background-image: url("/images/cover_about.jpg");
+
+      h1 {
+        right: 0px;
+        text-align: right;
+
+        background-color: $white;
+        border-left: 7px solid $chiba-red;
+      }
+    }
+
+    .contents {
+      @extend %content-element;
+    }
+
+    @include respond-to(wide-screen) {
+      .cover {
+        h1 {
+          padding: 0 6px 0 0;
+          width: 326px;
+
+          bottom: 12px;
+        }
+      }
+    }
+
+    @include respond-to(tablet) {
+      .cover {
+        h1 {
+          padding: 0 6px 0 0;
+          width: 290px;
+
+          bottom: 12px;
+        }
+      }
+    }
+
+    @include respond-to(smartphone) {
+      .cover {
+        h1 {
+          padding: 0 6px 0 0;
+          width: 174px;
+
+          bottom: 8px;
+
+          font-size: 20pt;
+        }
+      }
+    }
+  }
+
+  #about-overview {
+    @extend %content-element;
+  }
+
+  #about-business {
+    @extend %content-element;
+
+    ul#projects {
+      display: flex;
+      justify-content: space-around;
+
+      margin-top: 16px;
+
+      li {
+        p {
+          font-size: 12pt;
+          text-align: center;
+
+          margin: 6px 0;
+
+          &.description {
+            color: $usuzumi;
+          }
+        }
+
+        img {
+          border-radius: 12px;
+          width: 300px;
+        }
+      }
+    }
+
+    @include respond-to(wide-screen) {
+      max-width: $vp-pc-min-width;
+      margin: 0 auto;
+      padding: 30px;
+    }
+
+    @include respond-to(tablet) {
+      padding: 30px 20px;
+    }
+
+    @include respond-to(smartphone) {
+      padding: 30px 20px;
+
+      ul {
+        flex-direction: column;
+        justify-content: start;
+
+        li {
+          img {
+            border-radius: 12px;
+            width: 260px;
+          }
+
+          & + li {
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+  }
+}

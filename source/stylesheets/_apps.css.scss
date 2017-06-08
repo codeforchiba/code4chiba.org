@@ -1,0 +1,69 @@
+#apps {
+  #app-cover {
+    .cover {
+      @extend %cover-image;
+
+      background-image: url("/images/cover_app.jpg");
+
+      h1 {
+        right: 0px;
+        text-align: right;
+
+        background-color: $white;
+        border-left: 7px solid $chiba-red;
+      }
+    }
+
+    .contents {
+      @extend %content-element;
+    }
+
+    @include respond-to(wide-screen) {
+      .cover {
+        h1 {
+          padding: 0 6px 0 0;
+          width: 326px;
+
+          bottom: 12px;
+        }
+      }
+    }
+
+    @include respond-to(tablet) {
+      .cover {
+        h1 {
+          padding: 0 6px 0 0;
+          width: 290px;
+
+          bottom: 12px;
+        }
+      }
+    }
+
+    @include respond-to(smartphone) {
+      .cover {
+        h1 {
+          padding: 0 6px 0 0;
+          width: 174px;
+
+          bottom: 8px;
+
+          font-size: 20pt;
+        }
+      }
+    }
+  }
+
+  #app-list {
+    @extend %content-element;
+
+    > ul {
+      > li {
+        > p:not(.links) {
+          padding-bottom: 8px;
+          border-bottom: 1px solid $silver;
+        }
+      }
+    }
+  }
+}

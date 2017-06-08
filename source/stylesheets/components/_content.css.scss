@@ -21,9 +21,15 @@
     }
   }
 
+  ul.links {
+    li {
+      text-align: right;
+    }
+  }
+
   @include respond-to(wide-screen) {
     max-width: $vp-pc-min-width;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     padding: 30px;
 
     p {

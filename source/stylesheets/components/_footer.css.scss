@@ -1,12 +1,12 @@
 footer {
-  @include clearfix;
+  @include clearfix();
 
   border-top: 8px solid $chiba-blue;
   background-color: $silver;
 
   padding: 20px 0px 12px 98px;
 
-  background-image: image-url("icon.png");
+  background-image: url("/images/icon.png");
   background-repeat: no-repeat;
   background-size: 80px 80px;
   background-position: top 10px left 10px;
@@ -24,7 +24,7 @@ footer {
   #footer-service {
     float: right;
 
-    @include clearfix;
+    @include clearfix();
     margin: 12px 20px 0 0;
 
     li {
