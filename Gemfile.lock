@@ -117,6 +117,9 @@ GEM
       parallel
       ruby-progressbar
       unf
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.10.2)
     multi_json (1.12.1)
@@ -160,6 +163,7 @@ DEPENDENCIES
   middleman-google-analytics (~> 3.0.0)
   middleman-livereload (~> 3.4.0)
   middleman-s3_sync (~> 4.0.3)
+  mime-types
   tzinfo-data
   wdm (~> 0.1.0)
 

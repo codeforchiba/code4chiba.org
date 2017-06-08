@@ -13,7 +13,7 @@ end
 
 # Activate s3_sync extension
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket                     = 'code4chiba.org'
+  s3_sync.bucket                     = ENV['AWS_BUCKET']
   s3_sync.region                     = 'ap-northeast-1'
   s3_sync.aws_access_key_id          = ENV['AWS_ACCESS_KEY_ID']
   s3_sync.aws_secret_access_key      = ENV['AWS_SECRET_ACCESS_KEY']
@@ -24,6 +24,10 @@ activate :s3_sync do |s3_sync|
   s3_sync.reduced_redundancy_storage = false
   s3_sync.acl                        = 'public-read'
   s3_sync.encryption                 = false
+  s3_sync.prefix                     = ''
+  s3_sync.version_bucket             = false
+  s3_sync.index_document             = 'index.html'
+  s3_sync.error_document             = '404.html'
 end
 
 # Activate google-analytics extension
@@ -70,13 +74,13 @@ page '/*.txt', layout: false
 
 # Mode-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
+configure :build do
+  set :css_dir, 'stylesheets'
+  set :js_dir, 'javascripts'
+  set :images_dir, 'images'
+  set :fonts_dir, 'fonts'
+end
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
-
-# Environment-specific configuration
 configure :development do
   set :css_dir, 'stylesheets'
   set :js_dir, 'javascripts'
@@ -84,27 +88,4 @@ configure :development do
   set :fonts_dir, 'fonts'
 
   activate :livereload
-end
-
-# Production-specific configuration
-configure :production do
-  set :css_dir, 'stylesheets'
-  set :js_dir, 'javascripts'
-  set :images_dir, 'images'
-  set :fonts_dir, 'fonts'
-
-  # For example, change the Compass output style for deployment
-  activate :minify_css
-
-  # Minify Javascript on build
-  activate :minify_javascript
-
-  # Enable cache buster
-  # activate :asset_hash
-
-  # Use relative URLs
-  # activate :relative_assets
-
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
 end
