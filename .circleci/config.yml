@@ -7,7 +7,6 @@ jobs:
     branches:
       only:
         - master
-        - feature/introduce-circleci
     steps:
       - checkout
       - run:
