@@ -332,4 +332,36 @@
       }
     }
   }
+
+  #index-baby {
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+
+    .baby-banner {
+      margin: 20px auto;
+
+      @include respond-to(wide-screen) {
+        width: 728px;
+        height: 90px;
+
+        background-image: url("/images/welove_wide.png");
+      }
+
+      @include respond-to(tablet) {
+        width: 468px;
+        height: 60px;
+
+        background-image: url("/images/welove_tablet.png");
+      }
+
+      @include respond-to(smartphone) {
+        width: 300px;
+        height: 250px;
+
+        background-image: url("/images/welove_smartphone.png");
+      }
+    }
+  }
 }
