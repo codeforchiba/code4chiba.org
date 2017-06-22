@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.3.3
+    working_directory: /home/circleci/build
+    branches:
+      only:
+        - master
+        - feature/introduce-circleci
+    steps:
+      - checkout
+      - run:
+          name: Prepare
+          command: |
+            bundle install
+            curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+            sudo apt-get install -y nodejs
+            npm install
+      - run:
+          name: Build
+          command: |
+            bundle exec middleman build
+      - deploy:
+          command: |
+            bundle exec middleman s3_sync
