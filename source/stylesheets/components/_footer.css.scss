@@ -46,6 +46,17 @@ footer {
             }
           }
 
+          &.instagram {
+            width: 1.8em;
+            height: 1.8em;
+            line-height: 1.8em;
+
+            i.fa-stack-1x {
+              font-size: 18pt;
+              line-height: 1.3em;
+            }
+          }
+
           &.medium {
             width: 1.8em;
             height: 1.8em;
@@ -61,6 +72,10 @@ footer {
 
       & + li {
         margin-left: 10px;
+
+        &.inverse {
+          margin-left: 9px;
+        }
       }
     }
   }
