@@ -11,7 +11,7 @@ description: "NPO法人 Code for Chiba の会員制度のご案内です。"
 
     .contents
       %p
-        Code for Chiba は、NPO法人です。NPO法人として、会員制度がありますので、こちらをご紹介します。
+        Code for Chiba の会員制度をご紹介します。
 
   %section#membership-about
     %h1 会員制度について
@@ -24,10 +24,35 @@ description: "NPO法人 Code for Chiba の会員制度のご案内です。"
     %p
       Code for Chiba の活動に賛同し、主体的に参加する皆様におすすめします。Code for Chiba の進める各種プロジェクトやイベントへの積極的な参加をお願いしております。正会員には、総会の議決権がありますので、総会への参加義務があります。
 
+    %p
+      正会員の皆様には、活動をサポートするための環境を提供します。
+
+    %ul
+      %li code4chiba.org ドメインのメールアドレス
+      %li オンライン共有ドキュメントへのアクセス
+      %li オンラインコミュケーションツールへのアクセス
+      %li オンラインコラボレーションツールへのアクセス
+      %li Code for Chiba オリジナル Tシャツ & パーカー(実費がかかります)
+
+    %p
+      正会員の会費は、入会金 0円、年会費 4,000円となっております。
+
     %h2 賛助会員
 
     %p
-      Code for Chiba の活動に賛同し、支援いただける皆様におすすめします。賛助会員は、個人ではなく法人でも可能です。賛助会員の皆様の会費が、活動の支えとなります。賛助会員には、総会の議決権はございません。
+      Code for Chiba の活動に賛同し、支援いただける皆様におすすめします。賛助会員は、個人ではなく団体でも可能です。賛助会員の皆様の会費が、活動の支えとなります。賛助会員には、総会の議決権はございません。
+
+    %p
+      賛助会員の皆様には、活動状況をリアルタイムにみていただくことができる環境を提供します。
+
+    %ul
+      %li オンライン共有ドキュメントへのアクセス
+      %li オンラインコミュケーションツールへのアクセス
+      %li オンラインコラボレーションツールへのアクセス
+      %li Code for Chiba オリジナル Tシャツ & パーカー(実費がかかります)
+
+    %p
+      賛助会員の会費は、個人の場合は入会金 0円、年会費 4,000円(一口以上)、団体の場合は入会金 0円、年会費 6,000円(一口以上)となっております。
 
   %section#membership-join
     %h1 入会希望の方へ
@@ -40,15 +65,22 @@ description: "NPO法人 Code for Chiba の会員制度のご案内です。"
     %p.links
       = link_to "https://goo.gl/forms/w0SDOqctO5yhnVNw1", target: "_blank" do
         %i.fa.fa-external-link
-        NPO法人 Code for Chiba 入会申込書
+        NPO法人 Code for Chiba 正会員申込書
 
     %h2 賛助会員
 
     %p
-      下記のメールアドレスまで、お問い合わせください。オンラインの入会フォームは、準備でき次第ご案内いたします。
+      下記の申込みフォームに必要事項を記入してください。内容確認の上、手続き方法についてご連絡いたします。個人と団体それぞれ異なるフォームとなっておりますので、ご注意ください。
 
     %p.links
-      = mail_to "hello@code4chiba.org", nil, subject: "賛助会員への入会申込みについて"
+      = link_to "https://goo.gl/forms/KYWXhrAie8zmi6ql2", target: "_blank" do
+        %i.fa.fa-external-link
+        NPO法人 Code for Chiba 賛助会員(個人)申込書
+
+    %p.links
+      = link_to "https://goo.gl/forms/le7DblNtmI0LlPk93", target: "_blank" do
+        %i.fa.fa-external-link
+        NPO法人 Code for Chiba 賛助会員(団体)申込書
 
     %h2 その他
 
