@@ -21,18 +21,9 @@
     }
   }
 
-  ul {
-    line-height: 1.5;
-
-    list-style-type: circle;
-    list-style-position: inside;
-
-    &.links {
-      list-style-type: none;
-
-      li {
-        text-align: right;
-      }
+  ul.links {
+    li {
+      text-align: right;
     }
   }
 
