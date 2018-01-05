@@ -21,9 +21,18 @@
     }
   }
 
-  ul.links {
-    li {
-      text-align: right;
+  ul {
+    line-height: 1.5;
+
+    list-style-type: circle;
+    list-style-position: inside;
+
+    &.links {
+      list-style-type: none;
+
+      li {
+        text-align: right;
+      }
     }
   }
 
@@ -32,7 +41,7 @@
     margin: 0 auto 40px;
     padding: 30px;
 
-    p {
+    p, ul {
       margin: 20px 20px 0 20px;
     }
   }
@@ -44,7 +53,7 @@
       margin: 20px 0 0;
     }
 
-    p {
+    p, ul {
       margin: 20px 0 0;
     }
   }
@@ -62,7 +71,7 @@
       margin: 20px 0 0;
     }
 
-    p {
+    p, ul {
       margin: 20px 0 0;
 
       font-size: 12pt;
