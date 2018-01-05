@@ -56,6 +56,13 @@
 
   #membership-about {
     @extend %content-element;
+
+    ul {
+      line-height: 1.5;
+
+      list-style-type: circle;
+      list-style-position: inside;
+    }
   }
 
   #membership-join {
