@@ -2,7 +2,6 @@
   "name": "code4chiba.org",
   "version": "1.0.0",
   "description": "Code for Chiba website",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +9,8 @@
     "type": "git",
     "url": "git+https://github.com/codeforchiba/code4chiba.org.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Code for Chiba <hello@code4chiba.org>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/codeforchiba/code4chiba.org/issues"
   },
